@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>simditor</title>
+	<meta charset="utf-8">
+	<link rel="stylesheet" type="text/css" href="assets/styles/simditor.css"">
+</head>
+<body>
+<section id="page-demo">
+  <textarea id="editor" placeholder="初始化第一个编辑器" autofocus></textarea>
+  <div id="preview"></div>
+</section>
+<script type="text/javascript" src="assets/scripts/jquery.min.js"></script>
+<script type="text/javascript" src="assets/scripts/module.js"></script>
+<script type="text/javascript" src="assets/scripts/hotkeys.js"></script>
+<script type="text/javascript" src="assets/scripts/uploader.js"></script>
+<script type="text/javascript" src="assets/scripts/simditor.js"></script>
+<script type="text/javascript">
+	var editor = new Simditor({
+	  textarea: $('#editor'),
+	  codeLanguages :[
+		  { name: 'Bash', value: 'bash' },
+		  { name: 'C++', value: 'c++' },
+		  { name: 'C#', value: 'cs' },
+		  { name: 'CSS', value: 'css' },
+		  { name: 'Erlang', value: 'erlang' },
+		  { name: 'Less', value: 'less' },
+		  { name: 'Sass', value: 'sass' },
+		  { name: 'Diff', value: 'diff' },
+		  { name: 'CoffeeScript', value: 'coffeescript' },
+		  { name: 'HTML,XML', value: 'html' },
+		  { name: 'JSON', value: 'json' },
+		  { name: 'Java', value: 'java' },
+		  { name: 'JavaScript', value: 'js' },
+		  { name: 'Markdown', value: 'markdown' },
+		  { name: 'Objective C', value: 'oc' },
+		  { name: 'PHP', value: 'php' },
+		  { name: 'Perl', value: 'parl' },
+		  { name: 'Python', value: 'python' },
+		  { name: 'Ruby', value: 'ruby' },
+		  { name: 'SQL', value: 'sql'},
+		],
+	  defaultImage:'assets/images/image.png',
+	  toolbar:[
+		  'title',
+		  'bold',
+		  'italic',
+		  'underline',
+		  'strikethrough',
+		  'fontScale',
+		  'color',
+		  'ol',            
+		  'ul',            
+		  'blockquote',
+		  'code',          
+		  'table',
+		  'link',
+		  'image',
+		  'hr',            
+		  'indent',
+		  'outdent',
+		  'alignment'
+		],
+	  toolbarFloat:true
+	});
+</script>
+</body>
+</html>
+
+
+
+
+
